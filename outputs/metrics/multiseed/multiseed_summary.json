@@ -1,0 +1,754 @@
+{
+  "runs": [
+    {
+      "model": "baseline_cnn",
+      "seed": 42,
+      "class_names": [
+        "glioma",
+        "meningioma",
+        "notumor",
+        "pituitary"
+      ],
+      "best_checkpoint": "F:\\brain tumor detection\\outputs\\models\\multiseed\\baseline_cnn_seed_42_best.pt",
+      "validation_metrics": {
+        "accuracy": 0.8138888888888889,
+        "precision": 0.826518991036635,
+        "recall": 0.8138888888888889,
+        "f1_score": 0.813998016529241,
+        "confusion_matrix": [
+          [
+            183,
+            67,
+            15,
+            5
+          ],
+          [
+            11,
+            207,
+            25,
+            27
+          ],
+          [
+            0,
+            16,
+            246,
+            8
+          ],
+          [
+            3,
+            23,
+            1,
+            243
+          ]
+        ],
+        "roc_auc": 0.9602686328303613,
+        "class_metrics": {
+          "glioma": {
+            "precision": 0.9289340101522843,
+            "recall": 0.6777777777777778,
+            "f1_score": 0.7837259100642399
+          },
+          "meningioma": {
+            "precision": 0.6613418530351438,
+            "recall": 0.7666666666666667,
+            "f1_score": 0.7101200686106347
+          },
+          "notumor": {
+            "precision": 0.8571428571428571,
+            "recall": 0.9111111111111111,
+            "f1_score": 0.8833034111310593
+          },
+          "pituitary": {
+            "precision": 0.8586572438162544,
+            "recall": 0.9,
+            "f1_score": 0.8788426763110307
+          }
+        },
+        "loss": 0.4599418103143021,
+        "accuracy_from_epoch": 0.8138888888888889
+      },
+      "test_metrics": {
+        "accuracy": 0.8333333333333334,
+        "precision": 0.8466989472536249,
+        "recall": 0.8333333333333334,
+        "f1_score": 0.8346360552779049,
+        "confusion_matrix": [
+          [
+            197,
+            56,
+            11,
+            6
+          ],
+          [
+            4,
+            218,
+            18,
+            30
+          ],
+          [
+            0,
+            15,
+            245,
+            10
+          ],
+          [
+            3,
+            25,
+            2,
+            240
+          ]
+        ],
+        "roc_auc": 0.9586716963877459,
+        "class_metrics": {
+          "glioma": {
+            "precision": 0.9656862745098039,
+            "recall": 0.7296296296296296,
+            "f1_score": 0.8312236286919831
+          },
+          "meningioma": {
+            "precision": 0.6942675159235668,
+            "recall": 0.8074074074074075,
+            "f1_score": 0.7465753424657534
+          },
+          "notumor": {
+            "precision": 0.8876811594202898,
+            "recall": 0.9074074074074074,
+            "f1_score": 0.8974358974358975
+          },
+          "pituitary": {
+            "precision": 0.8391608391608392,
+            "recall": 0.8888888888888888,
+            "f1_score": 0.8633093525179856
+          }
+        },
+        "loss": 0.45585599221565104,
+        "accuracy_from_epoch": 0.8333333333333334
+      }
+    },
+    {
+      "model": "tumordetnet",
+      "seed": 42,
+      "class_names": [
+        "glioma",
+        "meningioma",
+        "notumor",
+        "pituitary"
+      ],
+      "best_checkpoint": "F:\\brain tumor detection\\outputs\\models\\multiseed\\tumordetnet_seed_42_best.pt",
+      "validation_metrics": {
+        "accuracy": 0.8694444444444445,
+        "precision": 0.8751290031255318,
+        "recall": 0.8694444444444445,
+        "f1_score": 0.8668598316325813,
+        "confusion_matrix": [
+          [
+            254,
+            10,
+            5,
+            1
+          ],
+          [
+            50,
+            184,
+            22,
+            14
+          ],
+          [
+            2,
+            10,
+            254,
+            4
+          ],
+          [
+            20,
+            3,
+            0,
+            247
+          ]
+        ],
+        "roc_auc": 0.9807658893461362,
+        "class_metrics": {
+          "glioma": {
+            "precision": 0.7791411042944786,
+            "recall": 0.9407407407407408,
+            "f1_score": 0.8523489932885906
+          },
+          "meningioma": {
+            "precision": 0.8888888888888888,
+            "recall": 0.6814814814814815,
+            "f1_score": 0.7714884696016772
+          },
+          "notumor": {
+            "precision": 0.9039145907473309,
+            "recall": 0.9407407407407408,
+            "f1_score": 0.9219600725952813
+          },
+          "pituitary": {
+            "precision": 0.9285714285714286,
+            "recall": 0.9148148148148149,
+            "f1_score": 0.9216417910447762
+          }
+        },
+        "loss": 0.35371735969696333,
+        "accuracy_from_epoch": 0.8694444444444445
+      },
+      "test_metrics": {
+        "accuracy": 0.875,
+        "precision": 0.8773297765921197,
+        "recall": 0.875,
+        "f1_score": 0.8730054003009372,
+        "confusion_matrix": [
+          [
+            250,
+            14,
+            6,
+            0
+          ],
+          [
+            40,
+            194,
+            15,
+            21
+          ],
+          [
+            1,
+            9,
+            256,
+            4
+          ],
+          [
+            18,
+            3,
+            4,
+            245
+          ]
+        ],
+        "roc_auc": 0.9802423411065387,
+        "class_metrics": {
+          "glioma": {
+            "precision": 0.8090614886731392,
+            "recall": 0.9259259259259259,
+            "f1_score": 0.8635578583765112
+          },
+          "meningioma": {
+            "precision": 0.8818181818181818,
+            "recall": 0.7185185185185186,
+            "f1_score": 0.7918367346938775
+          },
+          "notumor": {
+            "precision": 0.9110320284697508,
+            "recall": 0.9481481481481482,
+            "f1_score": 0.9292196007259528
+          },
+          "pituitary": {
+            "precision": 0.9074074074074074,
+            "recall": 0.9074074074074074,
+            "f1_score": 0.9074074074074074
+          }
+        },
+        "loss": 0.34403659417121496,
+        "accuracy_from_epoch": 0.875
+      }
+    },
+    {
+      "model": "baseline_cnn",
+      "seed": 52,
+      "class_names": [
+        "glioma",
+        "meningioma",
+        "notumor",
+        "pituitary"
+      ],
+      "best_checkpoint": "F:\\brain tumor detection\\outputs\\models\\multiseed\\baseline_cnn_seed_52_best.pt",
+      "validation_metrics": {
+        "accuracy": 0.8046296296296296,
+        "precision": 0.8106864711079464,
+        "recall": 0.8046296296296296,
+        "f1_score": 0.8037138324670074,
+        "confusion_matrix": [
+          [
+            185,
+            57,
+            15,
+            13
+          ],
+          [
+            20,
+            197,
+            10,
+            43
+          ],
+          [
+            0,
+            21,
+            242,
+            7
+          ],
+          [
+            7,
+            14,
+            4,
+            245
+          ]
+        ],
+        "roc_auc": 0.9498571101966164,
+        "class_metrics": {
+          "glioma": {
+            "precision": 0.8726415094339622,
+            "recall": 0.6851851851851852,
+            "f1_score": 0.7676348547717843
+          },
+          "meningioma": {
+            "precision": 0.6816608996539792,
+            "recall": 0.7296296296296296,
+            "f1_score": 0.7048300536672629
+          },
+          "notumor": {
+            "precision": 0.8929889298892989,
+            "recall": 0.8962962962962963,
+            "f1_score": 0.8946395563770795
+          },
+          "pituitary": {
+            "precision": 0.7954545454545454,
+            "recall": 0.9074074074074074,
+            "f1_score": 0.8477508650519031
+          }
+        },
+        "loss": 0.5031930800941256,
+        "accuracy_from_epoch": 0.8046296296296296
+      },
+      "test_metrics": {
+        "accuracy": 0.8037037037037037,
+        "precision": 0.8084459978742772,
+        "recall": 0.8037037037037037,
+        "f1_score": 0.8010335226031884,
+        "confusion_matrix": [
+          [
+            182,
+            54,
+            19,
+            15
+          ],
+          [
+            25,
+            195,
+            11,
+            39
+          ],
+          [
+            1,
+            24,
+            230,
+            15
+          ],
+          [
+            4,
+            3,
+            2,
+            261
+          ]
+        ],
+        "roc_auc": 0.9539186099679926,
+        "class_metrics": {
+          "glioma": {
+            "precision": 0.8584905660377359,
+            "recall": 0.674074074074074,
+            "f1_score": 0.7551867219917012
+          },
+          "meningioma": {
+            "precision": 0.7065217391304348,
+            "recall": 0.7222222222222222,
+            "f1_score": 0.7142857142857143
+          },
+          "notumor": {
+            "precision": 0.8778625954198473,
+            "recall": 0.8518518518518519,
+            "f1_score": 0.8646616541353384
+          },
+          "pituitary": {
+            "precision": 0.7909090909090909,
+            "recall": 0.9666666666666667,
+            "f1_score": 0.87
+          }
+        },
+        "loss": 0.4962926764179159,
+        "accuracy_from_epoch": 0.8037037037037037
+      }
+    },
+    {
+      "model": "tumordetnet",
+      "seed": 52,
+      "class_names": [
+        "glioma",
+        "meningioma",
+        "notumor",
+        "pituitary"
+      ],
+      "best_checkpoint": "F:\\brain tumor detection\\outputs\\models\\multiseed\\tumordetnet_seed_52_best.pt",
+      "validation_metrics": {
+        "accuracy": 0.9037037037037037,
+        "precision": 0.9038837761336415,
+        "recall": 0.9037037037037037,
+        "f1_score": 0.903661202767041,
+        "confusion_matrix": [
+          [
+            244,
+            18,
+            6,
+            2
+          ],
+          [
+            26,
+            223,
+            5,
+            16
+          ],
+          [
+            1,
+            17,
+            250,
+            2
+          ],
+          [
+            0,
+            11,
+            0,
+            259
+          ]
+        ],
+        "roc_auc": 0.9842512574302699,
+        "class_metrics": {
+          "glioma": {
+            "precision": 0.9003690036900369,
+            "recall": 0.9037037037037037,
+            "f1_score": 0.9020332717190388
+          },
+          "meningioma": {
+            "precision": 0.828996282527881,
+            "recall": 0.825925925925926,
+            "f1_score": 0.8274582560296846
+          },
+          "notumor": {
+            "precision": 0.9578544061302682,
+            "recall": 0.9259259259259259,
+            "f1_score": 0.9416195856873822
+          },
+          "pituitary": {
+            "precision": 0.9283154121863799,
+            "recall": 0.9592592592592593,
+            "f1_score": 0.9435336976320583
+          }
+        },
+        "loss": 0.27545599856034475,
+        "accuracy_from_epoch": 0.9037037037037037
+      },
+      "test_metrics": {
+        "accuracy": 0.9148148148148149,
+        "precision": 0.9151553366875652,
+        "recall": 0.9148148148148149,
+        "f1_score": 0.9143296981138646,
+        "confusion_matrix": [
+          [
+            249,
+            20,
+            1,
+            0
+          ],
+          [
+            27,
+            222,
+            4,
+            17
+          ],
+          [
+            3,
+            15,
+            249,
+            3
+          ],
+          [
+            1,
+            1,
+            0,
+            268
+          ]
+        ],
+        "roc_auc": 0.9872753772290811,
+        "class_metrics": {
+          "glioma": {
+            "precision": 0.8892857142857142,
+            "recall": 0.9222222222222223,
+            "f1_score": 0.9054545454545454
+          },
+          "meningioma": {
+            "precision": 0.8604651162790697,
+            "recall": 0.8222222222222222,
+            "f1_score": 0.8409090909090909
+          },
+          "notumor": {
+            "precision": 0.9803149606299213,
+            "recall": 0.9222222222222223,
+            "f1_score": 0.950381679389313
+          },
+          "pituitary": {
+            "precision": 0.9305555555555556,
+            "recall": 0.9925925925925926,
+            "f1_score": 0.9605734767025089
+          }
+        },
+        "loss": 0.25755480988710017,
+        "accuracy_from_epoch": 0.9148148148148149
+      }
+    },
+    {
+      "model": "baseline_cnn",
+      "seed": 62,
+      "class_names": [
+        "glioma",
+        "meningioma",
+        "notumor",
+        "pituitary"
+      ],
+      "best_checkpoint": "F:\\brain tumor detection\\outputs\\models\\multiseed\\baseline_cnn_seed_62_best.pt",
+      "validation_metrics": {
+        "accuracy": 0.8,
+        "precision": 0.811163798256413,
+        "recall": 0.8,
+        "f1_score": 0.7974559482719366,
+        "confusion_matrix": [
+          [
+            180,
+            64,
+            17,
+            9
+          ],
+          [
+            6,
+            186,
+            44,
+            34
+          ],
+          [
+            2,
+            5,
+            255,
+            8
+          ],
+          [
+            2,
+            20,
+            5,
+            243
+          ]
+        ],
+        "roc_auc": 0.9461659807956104,
+        "class_metrics": {
+          "glioma": {
+            "precision": 0.9473684210526315,
+            "recall": 0.6666666666666666,
+            "f1_score": 0.782608695652174
+          },
+          "meningioma": {
+            "precision": 0.6763636363636364,
+            "recall": 0.6888888888888889,
+            "f1_score": 0.6825688073394496
+          },
+          "notumor": {
+            "precision": 0.794392523364486,
+            "recall": 0.9444444444444444,
+            "f1_score": 0.8629441624365483
+          },
+          "pituitary": {
+            "precision": 0.826530612244898,
+            "recall": 0.9,
+            "f1_score": 0.8617021276595744
+          }
+        },
+        "loss": 0.5218760095260762,
+        "accuracy_from_epoch": 0.8
+      },
+      "test_metrics": {
+        "accuracy": 0.8101851851851852,
+        "precision": 0.8199895089813001,
+        "recall": 0.8101851851851852,
+        "f1_score": 0.8080674987476625,
+        "confusion_matrix": [
+          [
+            180,
+            64,
+            15,
+            11
+          ],
+          [
+            6,
+            201,
+            36,
+            27
+          ],
+          [
+            1,
+            6,
+            252,
+            11
+          ],
+          [
+            6,
+            15,
+            7,
+            242
+          ]
+        ],
+        "roc_auc": 0.9493049839963419,
+        "class_metrics": {
+          "glioma": {
+            "precision": 0.9326424870466321,
+            "recall": 0.6666666666666666,
+            "f1_score": 0.7775377969762419
+          },
+          "meningioma": {
+            "precision": 0.7027972027972028,
+            "recall": 0.7444444444444445,
+            "f1_score": 0.7230215827338129
+          },
+          "notumor": {
+            "precision": 0.8129032258064516,
+            "recall": 0.9333333333333333,
+            "f1_score": 0.8689655172413793
+          },
+          "pituitary": {
+            "precision": 0.8316151202749141,
+            "recall": 0.8962962962962963,
+            "f1_score": 0.8627450980392157
+          }
+        },
+        "loss": 0.5166248336986259,
+        "accuracy_from_epoch": 0.8101851851851852
+      }
+    },
+    {
+      "model": "tumordetnet",
+      "seed": 62,
+      "class_names": [
+        "glioma",
+        "meningioma",
+        "notumor",
+        "pituitary"
+      ],
+      "best_checkpoint": "F:\\brain tumor detection\\outputs\\models\\multiseed\\tumordetnet_seed_62_best.pt",
+      "validation_metrics": {
+        "accuracy": 0.8953703703703704,
+        "precision": 0.8988844933579987,
+        "recall": 0.8953703703703704,
+        "f1_score": 0.8945564934267547,
+        "confusion_matrix": [
+          [
+            240,
+            16,
+            4,
+            10
+          ],
+          [
+            6,
+            211,
+            15,
+            38
+          ],
+          [
+            3,
+            12,
+            250,
+            5
+          ],
+          [
+            0,
+            3,
+            1,
+            266
+          ]
+        ],
+        "roc_auc": 0.9827286236854137,
+        "class_metrics": {
+          "glioma": {
+            "precision": 0.963855421686747,
+            "recall": 0.8888888888888888,
+            "f1_score": 0.9248554913294798
+          },
+          "meningioma": {
+            "precision": 0.871900826446281,
+            "recall": 0.7814814814814814,
+            "f1_score": 0.82421875
+          },
+          "notumor": {
+            "precision": 0.9259259259259259,
+            "recall": 0.9259259259259259,
+            "f1_score": 0.9259259259259259
+          },
+          "pituitary": {
+            "precision": 0.8338557993730408,
+            "recall": 0.9851851851851852,
+            "f1_score": 0.9032258064516129
+          }
+        },
+        "loss": 0.31268454825988523,
+        "accuracy_from_epoch": 0.8953703703703704
+      },
+      "test_metrics": {
+        "accuracy": 0.8851851851851852,
+        "precision": 0.8892251510926011,
+        "recall": 0.8851851851851852,
+        "f1_score": 0.8846345970863057,
+        "confusion_matrix": [
+          [
+            228,
+            25,
+            6,
+            11
+          ],
+          [
+            8,
+            214,
+            9,
+            39
+          ],
+          [
+            1,
+            17,
+            248,
+            4
+          ],
+          [
+            3,
+            1,
+            0,
+            266
+          ]
+        ],
+        "roc_auc": 0.9824725651577503,
+        "class_metrics": {
+          "glioma": {
+            "precision": 0.95,
+            "recall": 0.8444444444444444,
+            "f1_score": 0.8941176470588236
+          },
+          "meningioma": {
+            "precision": 0.8326848249027238,
+            "recall": 0.7925925925925926,
+            "f1_score": 0.8121442125237192
+          },
+          "notumor": {
+            "precision": 0.9429657794676806,
+            "recall": 0.9185185185185185,
+            "f1_score": 0.9305816135084428
+          },
+          "pituitary": {
+            "precision": 0.83125,
+            "recall": 0.9851851851851852,
+            "f1_score": 0.9016949152542373
+          }
+        },
+        "loss": 0.3054780810795448,
+        "accuracy_from_epoch": 0.8851851851851852
+      }
+    }
+  ]
+}

@@ -13,12 +13,6 @@ data/processed/*
 
 outputs/cache/*
 !outputs/cache/.gitkeep
-outputs/figures/*
-!outputs/figures/.gitkeep
-outputs/logs/*
-!outputs/logs/.gitkeep
-outputs/metrics/*
-!outputs/metrics/.gitkeep
-outputs/models/*
-!outputs/models/.gitkeep
 
+# Keep demonstration artefacts in version control: figures, metrics, logs,
+# and trained model checkpoints. The cache remains excluded above.

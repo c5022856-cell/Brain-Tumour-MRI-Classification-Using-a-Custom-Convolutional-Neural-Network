@@ -1,0 +1,18 @@
+{
+  "num_images": 3160,
+  "num_classes": 4,
+  "classes": {
+    "glioma": 926,
+    "meningioma": 937,
+    "notumor": 396,
+    "pituitary": 901
+  },
+  "image_width_range": [
+    174,
+    1375
+  ],
+  "image_height_range": [
+    167,
+    1446
+  ]
+}

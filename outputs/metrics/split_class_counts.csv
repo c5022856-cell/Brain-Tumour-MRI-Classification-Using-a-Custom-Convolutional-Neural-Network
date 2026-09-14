@@ -1,0 +1,13 @@
+split,label,count
+test,glioma,270
+test,meningioma,270
+test,notumor,270
+test,pituitary,270
+train,glioma,1260
+train,meningioma,1260
+train,notumor,1260
+train,pituitary,1260
+val,glioma,270
+val,meningioma,270
+val,notumor,270
+val,pituitary,270
