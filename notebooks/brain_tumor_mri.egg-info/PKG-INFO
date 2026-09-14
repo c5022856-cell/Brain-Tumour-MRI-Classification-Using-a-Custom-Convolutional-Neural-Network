@@ -1,0 +1,51 @@
+Metadata-Version: 2.4
+Name: brain-tumor-mri
+Version: 0.1.0
+Summary: Brain tumour MRI classification experiments
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: ipykernel>=6.29
+Requires-Dist: jupyterlab>=4.2
+Requires-Dist: kaggle>=1.6
+Requires-Dist: matplotlib>=3.8
+Requires-Dist: numpy>=1.26
+Requires-Dist: pandas>=2.2
+Requires-Dist: Pillow>=10.0
+Requires-Dist: PyYAML>=6.0
+Requires-Dist: scikit-learn>=1.4
+Requires-Dist: seaborn>=0.13
+Requires-Dist: torch>=2.2
+Requires-Dist: torchvision>=0.17
+Requires-Dist: tqdm>=4.66
+
+# Brain Tumour MRI Classification
+
+Research project for training and evaluating MRI brain-tumour classifiers. The notebooks contain the primary training pipeline and a secondary validation/multi-seed study.
+
+## Quick start
+
+1. Create and activate a Python 3.10+ virtual environment.
+2. Install the project and its dependencies:
+
+   ```powershell
+   python -m pip install --upgrade pip
+   python -m pip install -e .
+   ```
+
+3. Select the environment as the `Python 3` kernel in Jupyter.
+4. If you use the dataset-download cells, put Kaggle credentials at `developer-only/kaggle/kaggle.json`.
+5. Run `01_primary_pipeline_brain_tumor_mri.ipynb` before the secondary-validation notebook.
+
+Project data is stored under `data/`; models, metrics, figures, and caches are stored under `outputs/`. These paths are intentionally ignored by Git.
+
+## Layout
+
+```text
+src/            Reusable pipeline code
+scripts/        Command-line workflow scripts
+notebooks/      Experiment notebooks (this repository's root currently contains them)
+data/           Downloaded and processed datasets
+outputs/        Model checkpoints and reports
+tests/          Automated tests
+```
+

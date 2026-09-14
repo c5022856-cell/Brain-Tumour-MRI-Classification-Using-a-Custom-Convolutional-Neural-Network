@@ -1,0 +1,20 @@
+# Python and notebooks
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+venv/
+
+# Local configuration and credentials
+.env
+developer-only/
+
+# Data, model weights, generated reports, and runtime caches
+data/raw/
+data/processed/
+outputs/
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!outputs/.gitkeep
+
